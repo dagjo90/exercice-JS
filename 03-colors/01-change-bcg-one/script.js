@@ -17,14 +17,14 @@
  document.getElementById("blue").addEventListener("click", blue);
 
  function red (){
-    document.body.style.backgroundColor = "red";
+    document.documentElement.style.backgroundColor = "red";
 }
   function green (){
-    document.body.style.backgroundColor = "green";
+    document.documentElement.style.backgroundColor = "green";
 }
   function yellow (){
-    document.body.style.backgroundColor = "yellow";
+    document.documentElement.style.backgroundColor = "yellow";
 }
   function blue (){
-    document.body.style.backgroundColor = "blue";
+    document.documentElement.style.backgroundColor = "blue";
 }
