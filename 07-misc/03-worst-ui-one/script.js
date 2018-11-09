@@ -11,6 +11,4 @@
 
 (function() {
 
-    // your code here
-
 })();

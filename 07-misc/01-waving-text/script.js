@@ -9,13 +9,28 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+var target = document.getElementById("target");
+var texte = target.innerHTML;
+var array = texte.split("");
 
-    var target = document.getElementById("target").value;
-    var array = JSON.parse("[" + target + "]");
+function wave () {
 
-    for (var i = 0; i < array.length; i++) {
-      array[i].style.fontSize = "17-large";
-    }
+target.innerHTML ="";
 
-})();
+for (var i = 0; i < array.length; i++) {
+
+  var span = document.createElement('span');
+  span.classList.add("test");
+  span.appendChild(document.createTextNode(array[i]));
+  target.appendChild(span);
+  }
+
+var test = document.getElementsByClassName("test");
+
+for (var l = 0; l < test.length; l++) {
+    var j = Math.floor(Math.random()*20);
+    test[l].style.fontSize = (25 + j) + "px";
+    console.log(j);
+}
+}
+wave();

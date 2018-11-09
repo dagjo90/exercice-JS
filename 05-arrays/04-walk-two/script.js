@@ -30,7 +30,7 @@
 
     function displayArray () {
 
-  var fruits2 = fruits.map(function (x){console.log(x)});
+  var fruits2 = fruits.map(function (x) {console.log(x)});
 }
 
 })();

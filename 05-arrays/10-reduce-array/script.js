@@ -94,11 +94,13 @@
     function displayResult () {
 
     var ages = [];
+
     for (var i = 0; i < people.length; i++) {
       ages.push(people[i].age);
     }
 
     var reducer = (accumulator, currentValue) => accumulator + currentValue;
+
     console.log(ages.reduce(reducer))
 
 }

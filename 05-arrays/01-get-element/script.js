@@ -32,4 +32,5 @@
 function displayfruit () {
     alert(fruits[3]);
 }
+
 })();

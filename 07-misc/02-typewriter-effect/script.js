@@ -11,5 +11,22 @@
 
 (function() {
 
+    var target = document.getElementById("target");
+    var texte = target.innerHTML;
+    var array = texte.split("");
+    target.innerHTML ="";
+    var i =0;
 
+    function myLoop () {
+       setTimeout(function () {
+         var span = document.createElement('span');
+         span.appendChild(document.createTextNode(array[i]));
+         target.appendChild(span);
+          i++;
+          if (i < array.length) {
+             myLoop();
+          }
+       }, 200);
+    }
+myLoop();
 })();
