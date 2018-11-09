@@ -9,8 +9,21 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
 
-    // your code here
+(function() {
+  var count = JSON.parse( localStorage.getItem("counter")) ;
+  if (isNaN(parseFloat(count))){
+    count = 0;
+  }
+  target.innerHTML = count;
+  document.getElementById("increment").addEventListener("click", inputCheck);
+
+ function inputCheck () {
+   var target = document.getElementById("target");
+   count++;
+   target.innerHTML = count;
+   localStorage.setItem("counter", JSON.stringify(count));
+
+}
 
 })();

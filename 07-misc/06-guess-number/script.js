@@ -11,6 +11,26 @@
 
 (function() {
 
-    // your code here
+    var random = Math.floor(Math.random()*100);
 
+    function ask () {
+
+    var choice = prompt("guess a number between 0 and 100", "number");
+
+    if (choice == random) {
+      alert("Well played the number is " + random);
+      location.reload();
+    } else if ( choice > random) {
+      alert("The number you chose (" + choice+ ") is bigger");
+      ask();
+    } else if (choice < random) {
+      alert("The number you chose (" + choice + ") is smaller");
+      ask();
+    } else {
+      alert("please enter a valid number");
+      ask();
+    }
+}
+
+ask();
 })();
