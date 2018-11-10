@@ -12,25 +12,32 @@
 var target = document.getElementById("target");
 var texte = target.innerHTML;
 var array = texte.split("");
-
+var span;
+var test;
 function wave () {
 
 target.innerHTML ="";
 
 for (var i = 0; i < array.length; i++) {
-
-  var span = document.createElement('span');
+  span = document.createElement('span');
   span.classList.add("test");
   span.appendChild(document.createTextNode(array[i]));
   target.appendChild(span);
   }
 
-var test = document.getElementsByClassName("test");
+size();
+}
+
+function size() {
+test = document.getElementsByClassName("test");
 
 for (var l = 0; l < test.length; l++) {
-    var j = Math.floor(Math.random()*20);
+    var j = Math.floor(Math.random()*15);
     test[l].style.fontSize = (25 + j) + "px";
-    console.log(j);
+
 }
+setTimeout(function () {
+  size();
+}, 175);
 }
 wave();

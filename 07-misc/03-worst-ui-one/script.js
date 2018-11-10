@@ -9,6 +9,11 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+function displayNumber() {
+  var slide = document.getElementById('slider').value;
+  var target = document.getElementById('target');
+  target.innerHTML = "+" + slide;
+  document.getElementById("slider").addEventListener("mousemove", displayNumber);
+}
 
-})();
+displayNumber();

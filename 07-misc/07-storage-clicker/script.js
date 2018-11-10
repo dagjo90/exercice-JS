@@ -23,7 +23,6 @@
    count++;
    target.innerHTML = count;
    localStorage.setItem("counter", JSON.stringify(count));
-
 }
 
 })();

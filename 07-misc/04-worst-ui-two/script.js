@@ -11,6 +11,54 @@
 
 (function() {
 
-    // your code here
+  var one = document.getElementById("part-one");
+  var two = document.getElementById("part-two");
+  var three = document.getElementById("part-three");
+  var four = document.getElementById("part-four");
+  var target = document.getElementById("target");
+
+  var oneValue = 460;
+  var twoValue = 0;
+  var threeValue = 0;
+  var fourValue = 0;
+
+  function displayNum() {
+    one.innerHTML = oneValue;
+    two.innerHTML = twoValue;
+    three.innerHTML = threeValue;
+    four.innerHTML = fourValue;
+
+      if (twoValue < 10) {
+      two.innerHTML = "0" + twoValue;
+    } if(threeValue < 10) {
+      three.innerHTML = "0" + threeValue;
+    } if(fourValue < 10) {
+      four.innerHTML = "0" + fourValue;
+    }
+
+  target.innerHTML = "+" + oneValue.toString() + two.innerHTML + three.innerHTML + four.innerHTML;
+}
+
+  one.addEventListener("click", function() {
+    oneValue++;
+    displayNum();
+  });
+
+  two.addEventListener("click", function() {
+    twoValue++;
+    displayNum();
+  });
+
+  three.addEventListener("click", function() {
+    threeValue++;
+    displayNum();
+  });
+
+  four.addEventListener("click", function() {
+    fourValue++;
+    displayNum();
+  });
+
+displayNum();
 
 })();
