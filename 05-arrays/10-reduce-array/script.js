@@ -100,9 +100,7 @@
     }
 
     var reducer = (accumulator, currentValue) => accumulator + currentValue;
-
     console.log(ages.reduce(reducer))
-
 }
 
 })();
