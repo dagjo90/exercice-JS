@@ -36,10 +36,10 @@ Série d'exercices réalisés pour la formation becode.
 ## Série 5
 
 * https://dagjo90.github.io/exercice-JS/05-arrays/01-get-element
-* https://dagjo90.github.io/exercice-JS/04-dates/02-manipulate-array
-* https://dagjo90.github.io/exercice-JS/04-dates/03-walk-one
-* https://dagjo90.github.io/exercice-JS/04-dates/04-walk-two
-* https://dagjo90.github.io/exercice-JS/04-dates/05-walk-three
+* https://dagjo90.github.io/exercice-JS/05-arrays/02-manipulate-array
+* https://dagjo90.github.io/exercice-JS/05-arrays/03-walk-one
+* https://dagjo90.github.io/exercice-JS/05-arrays/04-walk-two
+* https://dagjo90.github.io/exercice-JS/05-arrays/05-walk-three
 * https://dagjo90.github.io/exercice-JS/05-arrays/06-find-in-array
 * https://dagjo90.github.io/exercice-JS/05-arrays/07-filter-array
 * https://dagjo90.github.io/exercice-JS/05-arrays/08-array-includes
